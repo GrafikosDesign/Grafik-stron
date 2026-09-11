@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "wypieki"
+    label: "Wypieki i torty"
+    folder: "images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nazwa", name: "title", widget: "string"}
+      - {label: "Zdjęcie", name: "image", widget: "image"}
